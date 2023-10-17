@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="game">
+        <div id="top">
+            <div class="topLeft">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="topright">
+                <div class="scorec">
+                    <p>COMPUTER <br />SCORE</p>
+                    <h1 id="computer">0</h1>
+                </div>
+                <div class="scorey">
+                    <p>YOUR <br />SCORE</p>
+                    <h1 id="your">0</h1>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="bottomup">
+                <div class="bottom-left">
+                    <div class="choices-top">
+                        <div class="choice">
+                            <button class="choice-btn" id="r" >
+                                <img src="icon-rock.png" alt="Rock">
+                            </button>
+                        </div>
+                        <div class="choice">
+                            <button class="choice-btn" id="s">
+                                <img src="icon-scissors.png" alt="Scissors">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="choices-down">
+                        
+                        <div class="choice">
+                            <button class="choice-btn" id="p">
+                                <img src="icon-paper.png" alt="">
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <h1 id="final">Result</h1>
+                </div>
+                <div class="bottom-right">
+                    <button class="rule-btn">RULES</button>
+                    <button class="next-btn" onclick="nextFun()">NEXT</button>
+                    <div id="ruleImgContainer" class="hidden">
+                        <img src="Group 4.png" alt="Rules-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div id="result" class="hidden">
+            <div class="left">
+                <h2 class="resultleft">You Picked</h2>
+            </div>
+            <div class="middle">
+                <button class="playagain">Play Again</button>
+            </div>
+            <div class="right">
+                <h2 class="resultright">Computer Picked</h2>
+            </div>
+            <div class="buttons">
+                <button class="rule-btn2">RULES</button>
+                <button class="Next-button2">NEXT</button>
+             </div> 
+         </div> 
+        <script src="index.js"></script>
+</body>
+
+</html>
